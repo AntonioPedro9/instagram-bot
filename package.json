@@ -1,0 +1,15 @@
+{
+  "name": "instagram-bot",
+  "version": "1.0.0",
+  "description": "Bot que faz marcações automáticas em sorteios do Instagram",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "Antônio Pedro Rodrigues Santos",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^7.0.1"
+  }
+}
