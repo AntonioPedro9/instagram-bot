@@ -65,8 +65,11 @@ async function comment() {
 
 async function pickProfiles() {
 	while (true) {
-		let profile1 = profilesToMention[Math.floor(Math.random() * profilesToMention.length)];
-		let profile2 = profilesToMention[Math.floor(Math.random() * profilesToMention.length)];
+		let randomIndex1 = Math.floor(Math.random() * profilesToMention.length);
+		let randomIndex2 = Math.floor(Math.random() * profilesToMention.length);
+
+		let profile1 = profilesToMention[randomIndex1];
+		let profile2 = profilesToMention[randomIndex2];
 		
 		if (profile1 !== profile2) {
 			return `@${profile1} @${profile2}`;
