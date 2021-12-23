@@ -29,7 +29,7 @@ async function login() {
     waitUntil: "domcontentloaded",
   });
 
-  console.log(`\nConnecting...`);
+  console.log(`Connecting...`);
 
   await typeIn("input[name='username']", USERNAME);
   await typeIn("input[name='password']", PASSWORD);
