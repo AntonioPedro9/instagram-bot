@@ -1,7 +1,7 @@
 const USERNAME = "";
 const PASSWORD = "";
 const POST_URL = "";
-const MENTIONS_NUMBER = 2;
+const MENTIONS = 2;
 
 let profilesToMention = [];
 
@@ -64,7 +64,7 @@ async function pickProfiles() {
 
   let i = 0;
 
-  while (i < MENTIONS_NUMBER) {
+  while (i < MENTIONS) {
     let randomIndex = Math.floor(Math.random() * profilesToMention.length);
     let currentProfile = profilesToMention[randomIndex];
 
