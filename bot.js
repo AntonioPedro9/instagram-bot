@@ -45,9 +45,9 @@ async function comment() {
   console.log(`\nBot started!`);
 
   while (true) {
-    let text = await pickProfiles();
+    let comment = await pickProfiles();
 
-    await typeIn("textarea[class='Ypffh']", text);
+    await typeIn("textarea[class='Ypffh']", comment);
     await clickAt("button[type='submit']");
 
     comments++;
