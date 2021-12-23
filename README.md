@@ -6,12 +6,13 @@ O Bot faz aproximadamente 1400 marcações em 24 horas.
 
 ## Como usar
 
-No o arquivo ```bot.js``` preencha o seguinte trecho de código com suas informações do Instagram e o link da publicação que está acontecendo o sorteio.
+No o arquivo `bot.js` insira as seguintes informações:
 
 ```
-const USERNAME = "seu_nome_de_usuario";
-const PASSWORD = "sua_senha";
-const POST_URL = "link_da_publicacao";
+const USERNAME = ""; // nome de usuário
+const PASSWORD = ""; // senha do instagram
+const POST_URL = ""; // link da publicação do sorteio
+const MENTIONS = 2;  // número de pessoas que deseja marcar
 ```
 
 Em seguida adicione o nome de usuário das pessoas que você deseja marcar na publicação, exemplo:
@@ -28,4 +29,3 @@ Dentro da pasta do repositório rode os seguintes comandos:
 > npm install
 > npm start
 ```
-

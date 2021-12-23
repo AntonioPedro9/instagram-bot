@@ -1,12 +1,15 @@
 const USERNAME = "";
 const PASSWORD = "";
 const POST_URL = "";
+const MENTIONS_NUMBER = 2;
 
 let profilesToMention = [];
 
 const puppeteer = require("puppeteer");
 
-let browser, page, comments = 0;
+let browser,
+  page,
+  comments = 0;
 
 (async function main() {
   browser = await puppeteer.launch({
@@ -31,7 +34,7 @@ async function login() {
   await typeIn("input[name='username']", USERNAME);
   await typeIn("input[name='password']", PASSWORD);
   await clickAt("button[type='submit']");
-  await page.waitForSelector("span[class='TqC_a']");
+  await sleep(5);
 
   console.log("\nLogged in!");
 }
@@ -57,17 +60,21 @@ async function comment() {
 }
 
 async function pickProfiles() {
-  while (true) {
-    let randomIndex1 = Math.floor(Math.random() * profilesToMention.length);
-    let randomIndex2 = Math.floor(Math.random() * profilesToMention.length);
+  var comment = "";
 
-    let profile1 = profilesToMention[randomIndex1];
-    let profile2 = profilesToMention[randomIndex2];
+  let i = 0;
 
-    if (profile1 !== profile2) {
-      return `@${profile1} @${profile2}`;
+  while (i < MENTIONS_NUMBER) {
+    let randomIndex = Math.floor(Math.random() * profilesToMention.length);
+    let currentProfile = profilesToMention[randomIndex];
+
+    if (!comment.includes(currentProfile)) {
+      comment += currentProfile + " ";
+      i++;
     }
   }
+
+  return comment;
 }
 
 async function clickAt(element) {
