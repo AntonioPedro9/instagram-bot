@@ -18,7 +18,7 @@ const MENTIONS = 2;  // número de pessoas que deseja marcar
 Em seguida adicione o nome de usuário das pessoas que você deseja marcar na publicação, exemplo:
 
 ```
-let profilesToMention = ["usuario1", "usuario2", "usuario3", "usuario4"];
+let profilesToMention = ["@usuario1", "@usuario2", "@usuario3", "@usuario4"];
 ```
 
 ## Executando a aplicação
