@@ -1,31 +1,31 @@
 # Instagram Bot
 
-Aplicação desenvolvida usando [Node](https://nodejs.org/) e [Puppeteer](https://pptr.dev/) para fazer marcações automáticas em sorteios do Instagram.
+An application built using Node.js and [Puppeteer](https://pptr.dev/) to automate tagging in Instagram giveaways.
 <br>
-O Bot faz aproximadamente 1400 marcações em 24 horas.
+The bot can perform approximately 1.400 tags within 24 hours.
 
-## Como usar
+## How to use
 
-No o arquivo `bot.js` insira as seguintes informações:
-
-```
-const USERNAME = ""; // nome de usuário
-const PASSWORD = ""; // senha do instagram
-const POST_URL = ""; // link da publicação do sorteio
-const MENTIONS = 2;  // número de pessoas que deseja marcar
-```
-
-Em seguida adicione o nome de usuário das pessoas que você deseja marcar na publicação, exemplo:
+In the `bot.js` file, fill in the following information:
 
 ```
-let profilesToMention = ["@usuario1", "@usuario2", "@usuario3", "@usuario4"];
+const USERNAME = ""; // Instagram username
+const PASSWORD = ""; // Instagram password
+const POST_URL = ""; // URL of the giveaway post
+const MENTIONS = 2;  // Number of people to tag per comment
 ```
 
-## Executando a aplicação
-
-Dentro da pasta do repositório rode os seguintes comandos:
+Next, add the usernames of the people you want to tag in the post, for example:
 
 ```
-> npm install
-> npm start
+let profilesToMention = ["@user1", "@user2", "@user3", "@user4"];
+```
+
+## Running the Application
+
+Inside the repository folder, run the following commands:
+
+```
+$ npm install
+$ npm start
 ```
