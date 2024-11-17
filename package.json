@@ -10,6 +10,6 @@
   "author": "Antônio Pedro Rodrigues Santos",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^7.0.1"
+    "puppeteer": "^22.6.4"
   }
 }
