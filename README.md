@@ -15,7 +15,7 @@ const POST_URL = ""; // URL of the giveaway post
 const NUMBER_OF_PROFILES_TO_MENTION MENTIONS = 2;
 ```
 
-Next, ddd the username of the profiles you want to tag in the post, for example:
+Next, add the username of the profiles you want to tag in the post, for example:
 
 ```
 let profilesList = ["@user1", "@user2", "@user3", "@user4"];
